@@ -1,0 +1,13 @@
+
+<h1 class="text-center mt-5 p-5">
+ Component LifeCycle
+</h1>
+<div class="search-input-button-block">
+  <div class="search-input-block">
+    <label for="search">Search : </label>
+    <input type="text" name="search" id="search-box" #save>
+  </div>
+  <button (click)="submitedValue(save)"  class="btn btn-primary">Submit</button>
+</div>
+<app-child *ngIf="isDestroy" [myValue] = "data">ng-content : {{data}} </app-child>
+<button (click)="destroy()" class="btn btn-danger ml-2">Destroy Component</button>

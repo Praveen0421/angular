@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500,600,700,800,900&display=swap');
+.nav-items {
+  padding: 25px 0px;
+  font-family: 'Roboto';
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  background:#000000 ;
+}
+.nav-items .nav-item {
+  font-size:20px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+.nav-items .nav-item .action-btn{
+  text-decoration: none;
+  color: #333;
+}
+.item2{
+  outline: 2px solid #99f017;
+  outline-offset: 0px;
+  background: #99f017;
+  transition: all 0.5s ease-in-out;
+}
+
+.item1{
+  outline: 2px solid #eed91a;
+  outline-offset: 0px;
+  background: #eed91a;
+  transition: all 0.5s ease-in-out;
+}
+
+.item3{
+  outline: 2px solid #0bdcef;
+  outline-offset: 0px;
+  background: #0bdcef;
+  transition: all 0.5s ease-in-out;
+}
+
+.item4{
+  outline: 2px solid #ef590e;
+  outline-offset: 0px;
+  background: #ef590e;
+  transition: all 0.5s ease-in-out;
+
+}
+.active{
+  outline-offset: 2px;
+}
+.nav-items .active .action-btn{
+  color: #f2f1f1;
+}
+@media screen and (max-width:510px) {
+  .nav-items {
+    padding: 20px 0px;
+    gap: 10px;
+  }
+  .nav-items .nav-item {
+    font-size:16px;
+    padding: 6px 10px;
+  }
+}

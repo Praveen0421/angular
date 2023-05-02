@@ -1,0 +1,32 @@
+
+.search-input-button-block{
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.submit{
+  border: none;
+  padding: 10px 20px;
+
+  background: #000;
+  color: white;
+  border-radius: 7px;
+}
+.search-input-block{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  border-radius: 7px;
+  outline: none;
+}
+#search-box{
+  font-size: 16px;
+padding: 4px 4px;
+border-radius: 2px;
+outline: none;
+border: 1px solid black;
+}
+.search-input-block:focus{
+  border: 1px solid rgb(248, 151, 151);
+}

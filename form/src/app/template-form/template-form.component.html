@@ -1,0 +1,23 @@
+<form (ngSubmit)="ngOnSubmit(myform)" #myform="ngForm">
+  <div class="mb-3 form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel>
+  </div>
+  <div class="mb-3 form-group">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel>
+  </div>
+  <div class="mb-3 form-group">
+    <label class="form-check-label" for="course">Course</label>
+    <select name="course" id="course" class="form-control" ngModel>
+      <option value="select" selected disabled>Select</option>
+      <option value="select">Angular</option>
+      <option value="select">HTML5</option>
+      <option value="select">CSS3</option>
+      <option value="select">Bootstrap</option>
+      <option value="select">Javascript</option>
+    </select>
+
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
